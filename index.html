@@ -2245,7 +2245,7 @@ function authTplLogin(){
     <div class="auth-err" id="li_err"></div>
     <button class="auth-btn" onclick="authDoLogin()">Entrar</button>
     <div class="auth-links"><a onclick="authShow('recover')">Esqueci minha senha</a><a onclick="authShow('signup')">Criar conta</a></div>
-    <div class="auth-foot">Privado &amp; offline · salvo somente neste dispositivo</div>`;
+    `;
 }
 function authTplSignup(){
   const opts=SECRET_QUESTIONS.map(q=>`<option value="${esc(q)}">${esc(q)}</option>`).join('');
